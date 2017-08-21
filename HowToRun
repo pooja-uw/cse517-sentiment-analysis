@@ -1,0 +1,50 @@
+Common Setup
+===================================
+1. Login on umnak.cs.washington.edu
+2. Copy and unzip /homes/iws/nasmith/A2.tar.gz to your workspace.
+3. Run "./setup.sh" in the workspace.
+4. Run "source tf8/bin/activate" in the workspace.
+5. Run "pip3 install gensim" in the workspace.
+6. Download the word2vec embeddings from https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing
+7. Download and unzip the Glove embeddings from http://nlp.stanford.edu/data/glove.6B.zip
+8. Download and unzip A2.tar.gz from Canvas to your workspace.
+
+
+Analogy
+===================================
+Run the following command with different embedding names and paths.
+python3 analogy.py <embedding-name> <embedding-path> <questions-path>
+
+For example:
+python3 analogy.py word2vec GoogleNews-vectors-negative300.bin.gz word-test.v1.txt
+(or)
+python3 analogy.py glove glove.6B.200d.txt word-test.v1.txt
+(or)
+python3 analogy.py glove glove.6B.200d.txt word-test.v2.txt
+
+
+Anotnyms
+===================================
+Run the following command with different embedding names and paths.
+python3 antonyms.py <embedding-name> <embedding-path>
+
+For example:
+python3 antonyms.py word2vec GoogleNews-vectors-negative300.bin.gz
+(or)
+python3 antonyms.py glove glove.6B.200d.txt
+
+
+Feed-Forward Neural Network
+===================================
+Run the following command with "one_hot" or path to "*.pkl" file from /homes/iws/nasmith/A2.tar.gz
+python3 sentiment_nn_2017.py one_hot
+(or)
+python3 sentiment_nn_2017.py glove.6B.300d.pkl
+
+
+Feed-Forward Neural Network (BONUS)
+===================================
+Run the following command with "one_hot" or path to "*.pkl" file from /homes/iws/nasmith/A2.tar.gz
+python3 sentiment_bonus_nn_2017.py one_hot
+(or)
+python3 sentiment_bonus_nn_2017.py glove.6B.300d.pkl

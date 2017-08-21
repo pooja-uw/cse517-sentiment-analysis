@@ -1,0 +1,10 @@
+: languages-of-the-world
+India Hindi China Mandarin
+France French Germany German
+Russia Russian Korea Korean
+Egypt Arabic Japan Japanese
+: products
+YouTube Google Windows Microsoft
+AWS Amazon Gmail Google
+Playstation Sony IPhone Apple
+Corolla Toyota Elantra Hyundai
